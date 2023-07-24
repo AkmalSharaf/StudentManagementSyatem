@@ -4,64 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="#FEFEFE"
     tools:context=".Signin">
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="left" />
-
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signin"
-        android:textSize="50dp"
+        android:text="Welcome Back"
+        android:textColor="@color/Blue"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="146dp" />
+        tools:layout_editor_absoluteY="157dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="241dp"
-        android:layout_height="41dp"
-        android:background="@drawable/txtbox"
-        android:text="TextView"
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:background="@drawable/txtbox1"
+        android:ems="10"
+        android:hint="Student ID"
+        android:inputType="text"
+        android:paddingLeft="4dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="333dp"
+        android:layout_height="62dp"
+        android:background="@drawable/txtbox1"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="4dp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="358dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="241dp"
-        android:layout_height="41dp"
-        android:background="@drawable/txtbox"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="298dp" />
+        tools:layout_editor_absoluteY="414dp" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:id="@+id/button5"
+        android:layout_width="284dp"
+        android:layout_height="46dp"
+        android:background="@drawable/txtbox"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="437dp" />
+        tools:layout_editor_absoluteY="537dp" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New User? Register."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="498dp" />
+        android:text="create a new account"
+        android:textColor="@color/Blue"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/Blue"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="483dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
